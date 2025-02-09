@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary-500: #b8aa83;
+    --color-neutral-100: #eeeeee;
+
+    --font-primary: 'Kanit', sans-serif;
+    --font-secondary: 'Abel', sans-serif;
+}
+
+.nav-item {
+    @apply inline-block text-lg font-normal font-secondary transition-colors delay-200 hover:bg-primary-500 hover:text-white leading-7 md:leading-16 px-4 md:px-2;
+}
