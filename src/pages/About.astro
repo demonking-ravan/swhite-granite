@@ -1,9 +1,268 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import HoverCard from "../components/HoverCard.astro";
+import Layout from "../layouts/Layout.astro";
+import VisionMission from "../sections/Vision&Mission.astro";
 ---
 
-<Layout title='About - S White Granite' description='Home page of S White Granite'>
+<Layout
+	title="About - S White Granite"
+	description="Home page of S White Granite"
+>
 	<main>
-		<h1>About Page</h1>
+		<!-- banner section -->
+		<section
+			class="bg-[url(/images/about-banner-img.jpg)] bg-cover bg-no-repeat py-6 md:py-10 mb-20 overflow-hidden"
+		>
+			<div class="text-center">
+				<h1 class="main-section-title">About Us</h1>
+				<div
+					class="breadcrumb flex justify-center items-center gap-1.5 mt-1.5"
+				>
+					<a href="/">Home</a>
+					<span>/</span>
+					<span>About us</span>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="grid md:grid-cols-2 max-w-screen-xl mx-auto">
+				<div class="w-full h-full px-5 relative">
+					<img
+						class="w-full h-full object-cover"
+						src="/images/test-img.jpg"
+						alt="image"
+					/>
+					<HoverCard positionStyles="right-0 bottom-[-29px]" />
+				</div>
+				<div class="w-full h-max mt-10 md:mt-0">
+					<div class="px-5">
+						<h2 class="section-heading mb-6">
+							Exceptional Craftsmanship, <strong
+								>Endless Possibilities</strong
+							>
+						</h2>
+						<p class="mb-2.5">
+							Founded by a team of passionate artisans, designers,
+							and experts in stonecraft, S White Granite began as
+							a small operation and has grown into one of the most
+							respected marble and granite suppliers in the
+							industry. Over the years, our commitment to
+							excellence and innovation has earned us a reputation
+							as the go-to provider for luxury stone in the
+							market.
+						</p>
+						<p class="mb-8">
+							Our extensive experience in the industry allows us
+							to deliver exceptional products and services to our
+							clients. Whether you're looking for sophisticated
+							marble countertops, granite tiles, or bespoke
+							stonework for a commercial project, we have the
+							materials and skills to bring your vision to life.
+						</p>
+					</div>
+
+					<!-- info block -->
+					<div class="flex items-center flex-wrap">
+						<div
+							class="w-full sm:w-auto flex gap-4 items-center px-5"
+						>
+							<div
+								class="w-16 h-16 rounded-full text-white bg-primary-500 flex [flex-shrink:0] items-center justify-center"
+							>
+								<svg
+									class="w-8 h-8"
+									stroke="currentColor"
+									fill="none"
+									stroke-width="2"
+									viewBox="0 0 24 24"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									><circle cx="12" cy="12" r="10"
+									></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"
+									></path><line x1="9" x2="9.01" y1="9" y2="9"
+									></line><line
+										x1="15"
+										x2="15.01"
+										y1="9"
+										y2="9"></line></svg
+								>
+							</div>
+							<div>
+								<h4 class="font-primary text-lg">
+									Happy Clients
+								</h4>
+								<h5
+									class="text-primary-500 text-[40px] font-bold font-primary leading-10 tracking-wide"
+								>
+									500+
+								</h5>
+							</div>
+						</div>
+
+						<div
+							class="w-full sm:w-auto px-5 sm:border-l border-neutral-500 mt-8 sm:mt-0"
+						>
+							<div>
+								<h4 class="font-primary text-lg">
+									Clients Rating
+								</h4>
+								<div
+									class="text-primary-500 flex items-center gap-1.5 mt-2"
+								>
+									<svg
+										stroke="currentColor"
+										fill="currentColor"
+										stroke-width="0"
+										viewBox="0 0 512 512"
+										height="16px"
+										width="16px"
+										><path
+											d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z"
+										></path>
+									</svg>
+									<svg
+										stroke="currentColor"
+										fill="currentColor"
+										stroke-width="0"
+										viewBox="0 0 512 512"
+										height="16px"
+										width="16px"
+										><path
+											d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z"
+										></path>
+									</svg>
+									<svg
+										stroke="currentColor"
+										fill="currentColor"
+										stroke-width="0"
+										viewBox="0 0 512 512"
+										height="16px"
+										width="16px"
+										><path
+											d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z"
+										></path>
+									</svg>
+									<svg
+										stroke="currentColor"
+										fill="currentColor"
+										stroke-width="0"
+										viewBox="0 0 512 512"
+										height="16px"
+										width="16px"
+										><path
+											d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z"
+										></path>
+									</svg>
+									<svg
+										stroke="currentColor"
+										fill="currentColor"
+										stroke-width="0"
+										viewBox="0 0 512 512"
+										height="16px"
+										width="16px"
+										><path
+											d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z"
+										></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<VisionMission />
+
+		<section class="px-5 max-w-screen-xl mx-auto my-26">
+			<div>
+				<h2 class="section-heading mb-6 text-center">
+					Our Strategic <strong>Focus</strong>
+				</h2>
+				<p class="text-center">
+					We’ve built our reputation by focusing on quality,
+					innovation, and customer satisfaction. Our strategic
+					approach includes:
+				</p>
+			</div>
+
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16"
+			>
+				<div
+					class="bg-white hover:bg-secondaryshade duration-200 py-6 px-5 rounded-lg flex justify-center items-center flex-col shadow-[0px_0px_59px_0px_rgba(38,62,84,0.06)]"
+				>
+					<img
+						src="/images/wide-range.webp"
+						data-aos="fade-in"
+						alt="Wide range of materials"
+						loading="lazy"
+						width="250"
+						height="250"
+						class="w-16 aos-init aos-animate"
+					/>
+					<h3 class="mt-7 mb-3 font-bold text-xl">Wide range of materials</h3>
+					<p class="text-xs text-center opacity-60">
+						From luxurious marble to durable granite, we provide a variety of options to suit every project
+					</p>
+				</div>
+
+				<div
+					class="bg-white hover:bg-secondaryshade duration-200 py-6 px-5 rounded-lg flex justify-center items-center flex-col shadow-[0px_0px_59px_0px_rgba(38,62,84,0.06)]"
+				>
+					<img
+						src="/images/cutting-edge-tech.webp"
+						data-aos="fade-in"
+						alt="Cutting-edge technology"
+						loading="lazy"
+						width="250"
+						height="250"
+						class="w-16 aos-init aos-animate"
+					/>
+					<h3 class="mt-7 mb-3 font-bold text-xl">Cutting-edge technology</h3>
+					<p class="text-xs text-center opacity-60">
+						We use the latest machinery to ensure precision in every cut and finish
+					</p>
+				</div>
+
+				<div
+					class="bg-white hover:bg-secondaryshade duration-200 py-6 px-5 rounded-lg flex justify-center items-center flex-col shadow-[0px_0px_59px_0px_rgba(38,62,84,0.06)]"
+				>
+					<img
+						src="/images/sustainable.webp"
+						data-aos="fade-in"
+						alt="Sustainable practices"
+						loading="lazy"
+						width="250"
+						height="250"
+						class="w-16 aos-init aos-animate"
+					/>
+					<h3 class="mt-7 mb-3 font-bold text-xl">Sustainable practices</h3>
+					<p class="text-xs text-center opacity-60">
+						We prioritize eco-friendly sourcing and production processes, ensuring our materials have a minimal environmental impact
+					</p>
+				</div>
+
+				<div
+					class="bg-white hover:bg-secondaryshade duration-200 py-6 px-5 rounded-lg flex justify-center items-center flex-col shadow-[0px_0px_59px_0px_rgba(38,62,84,0.06)]"
+				>
+					<img
+						src="/images/expert.webp"
+						data-aos="fade-in"
+						alt="Expert craftsmanship"
+						loading="lazy"
+						width="250"
+						height="250"
+						class="w-16 aos-init aos-animate"
+					/>
+					<h3 class="mt-7 mb-3 font-bold text-xl">Expert craftsmanship</h3>
+					<p class="text-xs text-center opacity-60">
+						Our team of skilled artisans brings decades of experience to every project, ensuring impeccable results
+					</p>
+				</div>
+				
+			</div>
+		</section>
 	</main>
 </Layout>

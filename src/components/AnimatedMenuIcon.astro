@@ -1,0 +1,52 @@
+---
+
+---
+<!-- <span class="w-[48px] h-[48px] rounded-full bg-white overflow-hidden hamburger-icon"> -->
+<div class="wdt-popup-box-trigger-element animated-menu-icon">
+    <svg class="w-[48px] h-[48px] cursor-pointer fill-white" viewBox="0 0 100 100">
+        <g class="wdt-custom-header-pop-icon">
+            <rect x="0.56" y="48.35" width="98.88" height="3.3"></rect>
+            <rect x="0.56" y="80.35" width="98.88" height="3.3"></rect>
+            <rect x="0.56" y="16.35" width="98.88" height="3.3"></rect>
+        </g>
+    </svg>
+</div>
+<!-- </span> -->
+
+<style>
+    /* Header Popup Icon */
+
+    .wdt-custom-header-pop-icon > * {
+        animation: header-popup-scale 2s linear infinite;
+        -webkit-animation: header-popup-scale 2s linear infinite;
+        transform-origin: right center;
+        -webkit-transform-origin: right center;
+        position: relative;
+    }
+    .wdt-custom-header-pop-icon > *:nth-child(2) {
+        animation-delay: 0.8s;
+        -webkit-animation-delay: 0.8s;
+    }
+    .wdt-custom-header-pop-icon > *:nth-child(3) {
+        animation-delay: 1.4s;
+        -webkit-animation-delay: 1.4s;
+    }
+    .wdt-popup-box-trigger-element:hover .wdt-custom-header-pop-icon > *,
+    .wdt-custom-header-pop-icon:hover > * {
+        animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+    }
+
+    @keyframes header-popup-scale {
+        50% {
+            transform: scaleX(0.2);
+            -webkit-transform: scaleX(0.2);
+        }
+    }
+    @-webkit-keyframes header-popup-scale {
+        50% {
+            transform: scaleX(0.2);
+            -webkit-transform: scaleX(0.2);
+        }
+    }
+</style>

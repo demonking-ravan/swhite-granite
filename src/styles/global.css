@@ -6,8 +6,59 @@
 
     --font-primary: 'Kanit', sans-serif;
     --font-secondary: 'Abel', sans-serif;
+
+    --animate-grow: grow 1s ease-in-out;
+    --animate-jump: jump 3s linear infinite;
+
+    @keyframes grow {
+        0% {
+            transform: scaleY(0)
+        }
+        80% {
+            transform: scaleY(1.1)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        
+        50% {
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+        }
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+    }
+}
+
+.main-section-title {
+    @apply text-xl font-normal text-white font-primary;
+}
+
+.breadcrumb {
+    @apply font-secondary font-medium text-xs text-white;
 }
 
 .nav-item {
     @apply inline-block text-lg font-normal font-secondary transition-colors delay-200 hover:bg-primary-500 hover:text-white leading-7 md:leading-16 px-4 md:px-2;
+}
+
+.section-heading {
+    @apply text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-extralight font-primary;
+}
+
+.section-heading > strong {
+    @apply font-bold text-primary-500;
+}
+
+p {
+    @apply font-secondary text-lg;
 }

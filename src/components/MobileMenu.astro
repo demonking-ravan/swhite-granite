@@ -1,0 +1,27 @@
+---
+import AnimatedMenuIcon from "./AnimatedMenuIcon.astro";
+---
+<div class="md:hidden">
+    <a href="#" class="bg-primary-500 flex items-center justify-between text-lg text-white font-normal font-secondary leading-7 md:leading-16 px-4 md:px-2">
+        Menu
+        <AnimatedMenuIcon />
+    </a>
+
+    <ul class="menu-list hidden items-center justify-center bg-white py-2.5 shadow animate-grow origin-top">
+        <li><a href="/" class="nav-item">Home</a></li>
+        <li><a href="/about" class="nav-item">About</a></li>
+        <li><a href="/contact" class="nav-item">Contact</a></li>
+        <li><a href="/factory" class="nav-item">Factory</a></li>
+        <li><a href="/products" class="nav-item">Products</a></li>
+    </ul>
+</div>
+
+<script>
+    const menuIcon = document.querySelector('.animated-menu-icon');
+    const menuList = document.querySelector(".menu-list") as HTMLElement;
+
+    menuIcon?.addEventListener("click", () => {
+        menuList?.classList.toggle("hidden");
+
+    })
+</script>
