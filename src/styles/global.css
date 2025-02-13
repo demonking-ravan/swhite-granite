@@ -62,3 +62,7 @@
 p {
     @apply font-secondary text-lg;
 }
+
+.fields-style {
+    @apply font-secondary outline-none pb-3.5 border-b border-[#DED8D3];
+}
