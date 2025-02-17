@@ -51,9 +51,9 @@
     @apply inline-block text-lg font-normal font-secondary transition-colors delay-200 hover:bg-primary-500 hover:text-white leading-7 md:leading-16 px-4 md:px-2;
 }
 
-/* .section-heading {
+.section-heading {
     @apply text-3xl sm:text-4xl md:text-[40px] lg:text-[45px] font-extralight font-primary;
-} */
+}
 
 .section-heading > strong {
     @apply font-bold text-primary-500;
@@ -63,6 +63,6 @@ p {
     @apply font-secondary text-lg;
 }
 
-/* .fields-style {
+.fields-style {
     @apply font-secondary outline-none pb-3.5 border-b border-[#DED8D3];
-} */
+}
