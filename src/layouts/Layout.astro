@@ -1,6 +1,6 @@
 ---                               
 	import Header from '../components/Header.astro';
-	import './src/styles/global.css';
+	import "../styles/global.css";
 	import '@fontsource/kanit/200.css';
 	import '@fontsource/kanit/400.css';
 	import '@fontsource/kanit/500.css';
@@ -26,6 +26,7 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description}>
+		<link rel="stylesheet" href="/styles/global.css">
 	</head>
 	<body>
 		<Header/>
